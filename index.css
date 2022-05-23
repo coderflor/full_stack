@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "dancingscript";
+  src: url(./fonts/dancingscript.ttf);
+}
+
+body {
+  font-size: large;
+  font-family: "dancingscript";
+}
