@@ -1,0 +1,87 @@
+body {
+  position: relative;
+}
+
+h2, h3 {
+  margin: 20px;
+}
+
+img {
+  margin-left: 20px;
+}
+
+.imgs_agus {
+  margin-left: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+input {
+  margin: 10px;
+}
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Imagenes/corazoncitos.png');
+  background-repeat: repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.imagen-principal {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+.imagen-alineada {
+  text-align: center;
+}
+@font-face {
+  font-family: 'dancingscript';
+  src: url(./fonts/dancingscript.ttf);
+}
+
+.tituloh1 {
+  font-family: 'dancingscript';
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.tituloh2 {
+  font-family: 'dancingscript';
+  font-size: 50px;
+  text-align: center;
+}
+
+.tituloh3 {
+  font-family: 'dancingscript';
+  font-size: 40px;
+}
+
+.texto {
+  font-family: 'dancingscript';
+  font-size: 25px;
+}
+.alinear {
+  position:relative;
+  bottom: 60px;
+}
+.cuadrado {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-color: aquamarine;
+}
+.cuadrado1 {
+  background-color:brown;
+}
+.cuadrado2 {
+  background-color: blue;
+}
+.cuadrado3 {
+  background-color: green;
+}

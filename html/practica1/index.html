@@ -5,66 +5,95 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practicanding</title>
+  <title>Agus Page</title>
+  <link rel="stylesheet" href="reset.css" media="screen">
+  <link rel="stylesheet" href="index.css" media="screen">
+  <link rel="icon" href="./Imagenes/favicon.png">
+  
 </head>
 
 <body>
-  <h1>Bienvenidos a la página de Agus</h1>
-  <h2>Hola! Soy Agus Norris! :)</h2>
-  <a href="./Imagenes/Agus.jpg" target="_blank">
-    <img src="./Imagenes/Agus.jpg" alt="Foto de Agus con gorro lila de pompón" width="612">
-  </a>
-  <h3>Bueno, les cuento algunos datos sobre mí:</h3>
-  <ul>
-    <li>Nací el 27 de Diciembre de 2021</li>
-    <li>Tengo 4 meses</li>
-    <li>Mis papás se llaman Flor y Juan</li>
-    <li>Tengo a mis abuelos, tíos y primitas en otra provincia, pero me encanta verlos y pasar tiempo con ellos</li>
-  </ul>
-  <h3>Les voy a enumerar algunos de mis juguetes favoritos</h3>
-  <ol>
-    <li>Anita Lanita, mi primer juguete</li>
-    <li>Rafa, la Jirafa</li>
-    <li>Alejo, el conejo</li>
-    <li>Tito, el Patito</li>
-  </ol>
+  <div class="bg-image"></div>
+  <h1 class="tituloh1">Bienvenidos a la página de Agus!</h1>
+  <h2 class="tituloh2">Hola! Soy Agustina Norris Fernandez!</h2>
+  <div class="imagen-alineada">
+    <a href="./Imagenes/Agus.jpg" target="_blank">
+      <img class="imagen-principal" src="./Imagenes/Agus.jpg" alt="Foto de Agus con gorro lila de pompón" width="459">
+    </a>
+  </div>
+  <h3 class="tituloh3">Bueno, les cuento algunos datos sobre mí:</h3>
+  <div class="texto">
+    <ul>
+      <li>Nací el 27 de Diciembre de 2021</li>
+      <li>Tengo 4 meses</li>
+      <li>Mis papás se llaman Flor y Juan</li>
+      <li>Tengo a mis abuelos, tíos y primitas en otra provincia, pero me encanta verlos y pasar tiempo con ellos</li>
+    </ul>
+  </div>
+  <h3 class="tituloh3">Les voy a enumerar algunos de mis juguetes favoritos</h3>
+  <div class="texto">
+    <ol>
+      <li>Anita Lanita, mi primer juguete, una ovejita muy tierna</li>
+      <li>Rafa, la Jirafa</li>
+      <li>Alejo, el conejo</li>
+      <li>Tito, el Patito</li>
+      <li>La osa Caroza</li>
+      <li>Dante, el elefante</li>
+    </ol>
+  </div>
   <p>
-  <h3>Aquí les comparto un link con las canciones que me pone mi mamá:</h3>
-  <a href="https://www.youtube.com/watch?v=CtIH_d_OQ8E" target="_blank">
-    <img src="./Imagenes/plimplim.png" alt="Imagen del payaso plim plim, de las canciones plim plim" width="50" />
-  </a>
+  <h3 class="tituloh3">Aquí les comparto un link con las canciones que me hace escuchar mi mamá:</h3>
+  <div class="imagen-alineada">
+    <a href="https://www.youtube.com/watch?v=CtIH_d_OQ8E" target="_blank">
+      <img src="./Imagenes/plimplim.png" alt="Imagen del payaso plim plim, de las canciones plim plim" width="60" />
+    </a>
+    <a href="https://www.youtube.com/watch?v=B1svxwMuLf4" target="_blank">
+      <img src="./Imagenes/granja_zenon.webp" alt="Imagen del payaso plim plim, de las canciones plim plim" width="60" />
+    </a>
+  </div>
   </p>
-
-  <p>
-  <h3>Si quieren pueden clickear los siguientes botones y elegir qué fotos mías quieren ver:</h3>
-  </p>
-
-  <button><a href="./Imagenes/agus_caracol.jpg" target="_blank"><b>Agus Caracol</b></a></button>
-  <button><a href="./Imagenes/agus_conejito.jpg" target="_blank"><b>Agus Conejito</b></a></button>
-  <button><a href="./Imagenes/agus_gorro_colores.jpg" target="_blank"><b>Agus con Gorro de Colores</b></a></button>
-
-  <p>Mi mamá creó esta página, para que ustedes puedan saber un poquito más sobre mí, pero el objetivo principal, es que
+  <h3 class="tituloh3">Si quieren pueden clickear en las siguientes fotos, para poder ampliarlas</h3>
+  <div>
+    <a href="./Imagenes/agus_caracol.jpg" target="_blank">
+      <img class="alinear imgs_agus" src="./Imagenes/agus_caracol.jpg" alt="Agus disfrazada de caracol" width="15%">
+    </a>
+    <a href="./Imagenes/agus_gorro_colores.jpg" target="_blank">
+      <img class="imgs_agus" src="./Imagenes/agus_gorro_colores.jpg" alt="Agus usando un gorro de colores" width="10%">
+    </a>
+    <a href="./Imagenes/agus_conejito.jpg" target="_blank">
+      <img class="alinear imgs_agus" src="./Imagenes/agus_conejito.jpg" alt="Agus disfrazada de conejito" width="15%">
+    </a>
+  </div>
+  <p class="texto">Mi mamá creó esta página, para que ustedes puedan saber un poquito más sobre mí, pero el objetivo
+    principal, es que
     vieran lo hermosa y tierna que soy. Dicho esto es imposible que no te hayan dado ganas de venir a compartir conmigo
     el
     día de mi cumple! </p>
-  <p>Si el objetivo ha sido logrado, entonces te dejo este formulario para que te puedas anotar y así poder venir a mi
+  <p class="texto">Si el objetivo ha sido logrado, entonces te dejo este formulario para que te puedas anotar y así
+    poder venir a mi
     fiestita:</p>
 
-  <form action="">
+  <form class="texto">
     <div>
       <label for="name">Nombre</label>
       <input id="name" type="text" />
     </div>
 
     <div>
-      <label for="">Apellido</label>
+      <label for="lastname">Apellido</label>
       <input type="text" />
     </div>
 
     <div>
-      <label for="">Teléfono</label>
+      <label for="telephone">Teléfono</label>
       <input type="number" />
     </div>
+    <div>
+
+      <label for="email">E-mail</label>
+      <input type="email" />
+    </div>
+
     <div>
       <label for="">Parentezco:</label>
       <label for="">Abuel@</label>
@@ -77,10 +106,11 @@
       <input type="checkbox" />
     </div>
 
-    <label for="">Posible regalo</label>
-    <input type="text" />
-
   </form>
+  <div class="cuadrado"></div>
+  <div class="cuadrado cuadrado1"></div>
+  <div class="cuadrado cuadrado2"></div>
+  <div class="cuadrado cuadrado3"></div>
 </body>
 
 </html>
