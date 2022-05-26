@@ -1,5 +1,11 @@
+
 body {
   position: relative;
+}
+
+@font-face {
+  font-family: 'dancingscript';
+  src: url(./fonts/dancingscript.ttf);
 }
 
 h2, h3 {
@@ -38,10 +44,6 @@ input {
 }
 .imagen-alineada {
   text-align: center;
-}
-@font-face {
-  font-family: 'dancingscript';
-  src: url(./fonts/dancingscript.ttf);
 }
 
 .tituloh1 {
