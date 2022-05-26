@@ -80,7 +80,7 @@ p {
     text-align: center;
 }
  .casillero {
- width: 100%;
+   width: 100%;
    border-radius: 10px;
    border-color: black;
    background-color: rgb(250, 242, 232);
@@ -100,4 +100,29 @@ p {
 .pandamoto {
   border: none;
   background-color:transparent;
+  cursor: pointer;
 }
+.caracteristicas {
+  padding-left: 25px;
+}
+@media (max-width: 500px)
+{
+.formulario2 {
+    width: 60%;
+    height: auto;
+}
+.aver {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.centrado {
+  display: block;
+  margin-left: 0px;
+ }
+ .formulario {
+    width: 80%;
+}
+
+)
