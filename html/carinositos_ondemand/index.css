@@ -60,6 +60,10 @@ h3 {
     margin: 30px auto 15px auto;
     width: 60%;
 }
+.inline {
+  display: inline-flex;
+}
+  
 .formulario2 {
     display: inline-flex;
     flex-direction: column;
