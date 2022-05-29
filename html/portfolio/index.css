@@ -30,7 +30,7 @@ body {
   display: flex;
   width: 100%;
   height: 100px;
-  background-color: #aed0f9;
+  background: linear-gradient(#e3eefc,#aacff7);
   margin: 0;
   justify-content: space-between;
   border-bottom-color: #214da4;
