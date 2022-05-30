@@ -57,12 +57,17 @@ h3 {
     border-width: 5px;
     border-color: black;
     align-items: center;
-    margin: 30px auto 15px auto;
+    margin: 20px auto 15px auto;
     width: 60%;
 }
 .inline {
-  display: inline-flex;
+  display: inline-block;
 }
+.inline2 {
+  display: inline-block;
+  margin-left: 10px;
+}
+  
   
 .formulario2 {
     display: inline-flex;

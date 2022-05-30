@@ -28,57 +28,95 @@
     <p style="font-size: larger;"> Podes crear y personalizar un oso de peluche, para vos o para regalar haciendo apenas
       unos clicks!</p>
     <div class="formulario">
-      <h2>Vamos a crear!!!</h3>
-        <p class="pform">Selecciona las características que te gustaría que tenga:</p>
-        <ol class="caracteristicas">
-          <li><label for="tamaño">Qué tamaño te gustaría que tenga?</label></li>
+      <h2>Vamos a crear!!!</h2>
+      <p class="pform">Selecciona las características que te gustaría que tenga:</p>
+      <ol class="caracteristicas">
+        <li><label for="tamaño">Qué tamaño te gustaría que tenga?</label></li>
+        <div class="inline">
+          <input type="radio" name="tamaño" id="pequeño">
+          <label for="tamaño" id="pequeño">Pequeño</label>
+        </div>
+        <div class="inline">
+          <input type="radio" name="tamaño" id="mediano">
+          <label for="tamaño" id="mediano">Mediano</label>
+        </div>
+        <div class="inline">
+          <input type="radio" name="tamaño" id="grande">
+          <label for="tamaño" id="grande">Grande</label>
+        </div>
+        <li><label for="color">De qué color te gustaría que fuera?</label></li>
+        <div class="inline">
           <div class="inline">
-          <div>
-          <input type="radio" name="tamaño" id="Pequeño">Pequeño
+            <input type="radio" name="color" id="blanco">
+            <label for="color" id="blanco">Blanco</label>
           </div>
-          <div>
-          <input type="radio" name="tamaño" id="Mediano">Mediano
+          <div class="inline">
+            <input type="radio" name="color" id="rosa">
+            <label for="color" id="rosa">Rosa</label>
           </div>
-          <div>
-          <input type="radio" name="tamaño" id="Grande">Grande
+          <div class="inline">
+            <input type="radio" name="color" id="celeste">
+            <label for="color" id="celeste">Celeste</label>
           </div>
+          <div class="inline">
+            <input type="radio" name="color" id="negro">
+            <label for="color" id="negro">Negro</label>
           </div>
-          <li><label for="color">De qué color te gustaría que fuera?</label></li>
-          <input type="radio" name="color" id="blanco">Blanco
-          <input type="radio" name="color" id="rosa">Rosa
-          <input type="radio" name="color" id="celeste">Celeste
-          <input type="radio" name="color" id="negro">Negro
-          <input type="radio" name="color" id="marron">Marrón
-          <li><label for="adorno">Te gustaría que tu oso estuviera aún más lindo? Elige un adorno extra!!!</label></li>
-          <input type="radio" name="adorno" id="sombrero"> Sombrero
-          <input type="radio" name="adorno" id="moño">Moño
-          <input type="radio" name="adorno" id="corazon">Corazón bordado en su pecho
-          <input type="radio" name="adorno" id="sin-adorno">Prefiero a mi oso sin ningún adorno
-        </ol>
-    </div>
-  </div>
-    <p style="font-size:x-large">Falta el último paso! Completá tus datos para que podamos enviartelo!:</p>
-    <div class="aver">
-      <form class="formulario2">
-        <label for="name">Nombre:</label>
-        <input class="casillero" type="text" name="name" id="Nombre" placeholder="Ingrese aquí su nombre">
-        <label for="last-name">Apellido:</label>
-        <input class="casillero" type="text" name="last-name" id="Apellido" placeholder="Ingrese aquí su apellido">
-        <label for="adress">Dirección</label>
-        <input class="casillero" type="text" name="adress" id="Direccion" placeholder="Ingrese aquí su dirección">
-        <label for="telephone">Teléfono:</label>
-        <input class="casillero" type="number" name="telephone" id="Telefono" placeholder="Ingrese aquí su teléfono">
-        <label for="email">E-mail:</label>
-        <input class="casillero" type="email" name="email" id="E-mail" placeholder="Ingrese aquí su E-mail">
-      </form>
-      <div class="panda-gif">
-        <button class="pandamoto" type="submit">
-          <div title="Enviar"><img src="./imagenes/panda.gif"
-              alt="Gif de oso panda en moto, boton para enviar formulario" width="100px" height="auto">
+          <div class="inline">
+            <input type="radio" name="color" id="marron">
+            <label for="color" id="marron">Marrón</label>
           </div>
-        </button>
+        </div>
+        <li><label for="adorno">Te gustaría que tu oso estuviera aún más lindo? Elige un adorno extra!!!</label></li>
+        <div class="inline">
+          <input type="radio" name="adorno" id="sombrero">
+          <label for="adorno" id="adorno">Sombrero</label>
+        </div>
+        <div class="inline">
+          <input type="radio" name="adorno" id="moño">
+          <label for="adorno" id="adorno">Moño</label>
+        </div>
+        <div class="inline">
+          <input type="radio" name="adorno" id="corazon">
+          <label for="adorno" id="adorno">Corazón bordado en su pecho</label>
+        </div>
+        <div class="inline">
+          <input type="radio" name="adorno" id="sin-adorno">
+          <label for="adorno" id="sin-adorno">Prefiero a mi oso sin ningún adorno</label>
+        </div>
+      </ol>
+      <div class="inline2">
+        <input type="checkbox" name="informacion" id="informacion">
+        <label for="informacion">Deseo recibir notificaciones cuando haya nuevas mejoras para hacerles a los ositos</label>
+      </div>
+      <div class="inline2">
+        <input type="checkbox" name="regalo" id="regalo">
+        <label for="regalo">Deseo recibir un regalo extra sin cargo cuando reciba mi osito personalizado</label>
       </div>
     </div>
+  </div>
+  <p style="font-size:x-large">Falta el último paso! Completá tus datos para que podamos enviartelo!:</p>
+  <div class="aver">
+    <form class="formulario2">
+      <label for="name">Nombre:</label>
+      <input class="casillero" type="text" name="name" id="Nombre" placeholder="Ingrese aquí su nombre">
+      <label for="last-name">Apellido:</label>
+      <input class="casillero" type="text" name="last-name" id="Apellido" placeholder="Ingrese aquí su apellido">
+      <label for="adress">Dirección</label>
+      <input class="casillero" type="text" name="adress" id="Direccion" placeholder="Ingrese aquí su dirección">
+      <label for="telephone">Teléfono:</label>
+      <input class="casillero" type="number" name="telephone" id="Telefono" placeholder="Ingrese aquí su teléfono">
+      <label for="email">E-mail:</label>
+      <input class="casillero" type="email" name="email" id="E-mail" placeholder="Ingrese aquí su E-mail">
+    </form>
+    <div class="panda-gif">
+      <button class="pandamoto" type="submit">
+        <div title="Enviar"><img src="./imagenes/panda.gif" alt="Gif de oso panda en moto, boton para enviar formulario"
+            width="100px" height="auto">
+        </div>
+      </button>
+    </div>
+  </div>
 
 
 </body>
