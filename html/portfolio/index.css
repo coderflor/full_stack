@@ -45,6 +45,7 @@ body {
   max-width: 300px;
   height: auto;
   align-self: center;
+  margin-left: 5px;
 }
 
 .content {
@@ -73,6 +74,9 @@ body {
   width: 100%;
   justify-content: space-around;
 }
+.navbar nav ul li{
+  margin-right: 16px;
+}
 .navbar nav ul{
   display: flex;
   flex-direction: row;
@@ -80,9 +84,78 @@ body {
   justify-content: space-evenly;
   list-style: none;  
   padding: 0;
-
 }
+
 a {
   color: #214da4;
   text-decoration: none;
+}
+.menu-button {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #214da4;
+  cursor: pointer;
+}
+.menu-button span {
+  width: 36px;
+  height: 4px;
+  background-color: #aacff7;
+}
+.menu-toggle {
+  display: none;
+}
+.toggle {
+  display: none;
+  text-align: center;
+  background-color: #214da4;
+  border-radius: 7px;
+  padding: 20px;
+  width: 150px;
+  margin: 10px auto;
+}
+.toggle li {
+  list-style: none;
+  display: block;
+  padding: 10px 0;
+  color: #aacff7;
+  font-family: 'raleway';
+  font-size: large;
+}
+
+.menu-toggle:checked + .toggle {
+  display:block;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 640px)
+{
+  .hamburguer { 
+    display: none;
+  }
+  .navbar nav ul li{
+  margin-right: 10px;
+  }
+  .navbar {
+  font-size: x-small;
+  width: 50%;
+  margin-right: 5px;
+}
+}
+@media (max-width: 639px)
+{
+  .navbar {
+    display:none;
+  }
+  .bg-image {
+    background-size: 200vh;
+  }
 }
