@@ -221,7 +221,6 @@ h2 {
   
 }
 .description {
-  width: auto;
   margin-top: 100px;
   font-family: 'raleway';
   color: #214da4;
@@ -237,9 +236,7 @@ h2 {
   flex-direction: row;
   flex-wrap: nowrap;
   font-family: 'raleway-regular';
-  justify-content: space-between;
   text-align: center;
-  margin: 20px;
 }
 .hobbies i {
   font-size: 2rem;
@@ -269,5 +266,12 @@ h2 {
   }
   .bg-image {
     background-size: 200vh;
+  }
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hobbies {
+    display: block;
   }
 }
