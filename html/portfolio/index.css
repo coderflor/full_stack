@@ -9,6 +9,14 @@ body {
   font-family: 'raleway';
   src: url(./fonts/raleway/Raleway-Bold.ttf);
 }
+@font-face {
+  font-family: 'raleway-thin';
+  src: url(./fonts/raleway/Raleway-Thin.ttf);
+}
+@font-face {
+  font-family: 'raleway-regular';
+  src: url(./fonts/raleway/Raleway-Regular.ttf);
+}
 
 .bg-image {
   width: 100%;
@@ -36,6 +44,7 @@ body {
   border-bottom-color: #214da4;
   border-bottom-width: 4px;
   border-bottom-style: solid;
+  z-index: 1000;
 }
 
 .logo {
@@ -49,10 +58,9 @@ body {
 }
 
 .content {
-  top: 100px;
-}
-
-.parrafo {
+  position: relative;
+  top: 104px;
+  padding: 40px 100px;
 
 }
 
@@ -135,6 +143,109 @@ a {
 .menu {
   display: flex;
   justify-content: flex-end;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  font-family: 'raleway';
+  color: #214da4;
+}
+.slogan p {
+  margin-right: 100px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.button1 {
+  width: 150px;
+  height: 30px;
+  background-color: #214da4;
+  color: #e3eefc;
+  border-radius: 10px;
+  border-color: #aacff7;
+  border-style: solid;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.button2 {
+  width: 150px;
+  height: 30px;
+  background-color: #e3eefc;
+  color: #214da4; 
+  border-radius: 10px;
+  border-color: #aacff7;
+  border-style: solid;
+  cursor: pointer;
+} 
+
+.button1:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.button2:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.coder-girl {
+  display: flex;
+  width: 350px;
+  height: auto;
+}
+.coder-girl img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #214da4;
+  border-style: solid;
+  
+}
+.description {
+  width: auto;
+  margin-top: 100px;
+  font-family: 'raleway';
+  color: #214da4;
+}
+.paragraph {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.hobbies {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: 'raleway-regular';
+  justify-content: space-between;
+  text-align: center;
+  margin: 20px;
+}
+.hobbies i {
+  font-size: 2rem;
+}
+.micro:checked {
+  display:block;
 }
 
 @media (min-width: 640px)
