@@ -18,6 +18,8 @@ body {
   src: url(./fonts/raleway/Raleway-Regular.ttf);
 }
 
+@keyframes rotation { from { transform: rotate(0deg); } to { transform: rotate(359deg); } }
+
 .bg-image {
   width: 100%;
   height: 100%;
@@ -238,12 +240,29 @@ h2 {
   font-family: 'raleway-regular';
   text-align: center;
 }
-.hobbies p {
 
+.micro:hover {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
+
+.plane:hover {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.camera:hover {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
 .hobbies i {
   font-size: 2rem;
 }
+
 .micro:checked {
   display:block;
 }
