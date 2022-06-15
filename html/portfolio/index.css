@@ -233,8 +233,8 @@ h2 {
   border-style: solid;
   
 }
-.description {
-  margin-top: 70px;
+.description, .benefits, .work-steps {
+  margin-top: 40px;
   font-family: 'raleway';
   color: #214da4;
 }
@@ -245,10 +245,12 @@ h2 {
 h4 {
     font-family: 'raleway';
     color: #214da4;
-
+}
+h3 {
+  margin-bottom: 40px;
 }
 
-.hobbies {
+.hobbies, .advantages, .work {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -257,62 +259,45 @@ h4 {
   text-align: center;
 }
 
-}
-.micro {
+.steps {
   animation-name: slidein;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
 }
-
-
-.plane {
-  animation-name: slidein;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
-.camera {
-  animation-name: slidein;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
+ 
 .hobbies i {
   font-size: 2rem;
+  transition: all 1s ease-in-out;
 }
 
-.benefits {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    font-family: 'raleway';
-    color: #214da4;
-    align-items: center;
-    background-color:#D1E4FA;
-    width: 50%;
-    border-radius: 20px;
-    border-color: #214da4;
-    border-style: double;
-    border-width: 2px;
+.plane:hover i {
+    transform: translate(250%, -55%);
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} 
+
+.micro:hover i {
+    transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.camera:hover i {
+    transform: rotate3d(1.5, 3, 1, 360deg);
+}
+.advantages i {
+  font-size: 2rem;
+  transition: all 1s ease-in-out;
+}
+
+.full_stack:hover i {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+.speed:hover i {
+    transform: translate(250%, 0%);
+}
+.flexibility:hover i {
+  transform: rotateY(360deg);
+}
 
 .paragraph {
   font-size: 1.2em;
-  text-align: center;
-}
-
-.advantages {
-  width: 50%;
-  margin:0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: 'raleway-regular';
   text-align: center;
 }
 
@@ -320,7 +305,44 @@ h4 {
   font-size: 2rem;
 }
 
+.work i {
+  font-size: 2rem;
+  transition: all 1s ease-in-out;
+  margin-top: 5px;
+}
 
+.advantages p {
+  padding: 3px;
+  margin: 3px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.full_stack, .speed, .flexibility {
+  width: 33.3%;
+}
+.steps {
+  width: calc(25% - 14px);
+  min-width: 25%;
+}
+steps:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.work > div {
+  margin: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #214da4;
+  background-color: #aacff789;
+  border-radius: 20px;
+}
+.work p {
+  padding: 3px;
+  margin: 3px;
+}
 
 @media (min-width: 640px)
 {
