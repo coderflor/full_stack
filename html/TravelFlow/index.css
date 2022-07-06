@@ -51,7 +51,8 @@ img {
 .navbar {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
+  gap:20px;
 }
 
 .navbar ul {
@@ -64,6 +65,14 @@ img {
 .navbar a {
   color: black;
   text-decoration: none;
+}
+.navbar:hover a{
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.navbar i {
+  font-size: 2em;
+  color: black;
 }
 
 p {
@@ -94,7 +103,7 @@ p {
   height: auto;
 }
 
-#hero, 
+#hero,
 #about-me {
   justify-content: center;
   flex-wrap: wrap;
@@ -196,10 +205,10 @@ p {
 }
 
 .about-me-text {
-  font-size: 0.4em;
-    font-family: "indie_flowers";
-    text-align: center;
-    font-weight: 900;
+  font-size: 0.6em;
+  font-family: "indie_flowers";
+  text-align: center;
+  font-weight: 900;
 }
 
 .about-me-text p {
@@ -219,17 +228,18 @@ p {
 }
 
 .destinations-title {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  padding: 30px;
-  padding-top: 10px;
-  font-family: "Frederika";
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    padding: 30px;
+    padding-top: 10px;
+    font-family: "Frederika";
 }
 
 .destinations-title img {
-  width: 100%;
+  width: 70%;
   height: auto;
   border-bottom: 10px;
   border-radius: 10px;
@@ -249,11 +259,16 @@ p {
   width: 70%;
   gap: 60px;
   padding-top: 10px;
-  font-family: 'indie_flowers';
+  font-family: "indie_flowers";
 }
+
 .cards-title {
-  margin-top: 0px;
   font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cards-title h3 {
+  margin: 0;
 }
 
 .cards {
@@ -261,69 +276,65 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   flex: 1 1 200px;
-  height: 300px;
+  height: 310px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.9px 2.9px 3.7px;
   border-radius: 20px;
 }
 .cards-content {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  height: 65px;
+  justify-self: flex-end;
+  margin-top: 10px;
 }
 .cards-img {
-  position: absolute;
-  display: flex;
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  align-items: center;
-  justify-content: center;
   background-size: cover;
+  display: flex;
+  flex: 1 0;
 }
 .small-text {
   font-size: 1.2em;
-  margin-top: 200px;
+  margin: 0;
 }
-.cards:nth-child(2) .cards-title,
-.cards:nth-child(4) .cards-title,
-.cards:nth-child(5) .cards-title,
-.cards:nth-child(6) .cards-title {
-  margin-top: 10px;
-}
-
 
 .cards:first-child .cards-img {
   background-image: url(./imagenes/beach.jpg);
 }
 .cards:nth-child(2) .cards-img {
   background-image: url(./imagenes/eiffel.jpg);
-  background-position-x: 30%;
 }
 .cards:nth-child(3) .cards-img {
   background-image: url(./imagenes/colisseum.jpg);
+  background-position-y: 90%;
 }
 .cards:nth-child(4) .cards-img {
   background-image: url(./imagenes/london.jpg);
 }
 .cards:nth-child(5) .cards-img {
   background-image: url(./imagenes/barcelona.jpg);
+  background-position-y: 100%;
 }
 .cards:nth-child(6) .cards-img {
   background-image: url(./imagenes/newyork.jpg);
 }
 .cards:nth-child(7) .cards-img {
-  background-image: url(./imagenes/eiffel.jpg);
-  background-position-x: 30%;
+  background-image: url(./imagenes/prague.jpg);
 }
 .cards:nth-child(8) .cards-img {
   background-image: url(./imagenes/colisseum.jpg);
+  background-position-y: 50%;
 }
 .cards:nth-child(9) .cards-img {
   background-image: url(./imagenes/london.jpg);
 }
 .cards:nth-child(10) .cards-img {
   background-image: url(./imagenes/barcelona.jpg);
+  background-position-y: 50%;
 }
