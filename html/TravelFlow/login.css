@@ -24,6 +24,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.login-container img {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -54,11 +59,12 @@ body {
   font-family: "indie_flowers";
 }
 .form-control {
-  background: transparent;
-  color: white;
-  font-size: 1em;
-  height: 30px;
-  margin-bottom: 15px;
+  background:transparent;
+    color:white;
+    font-size: 0.7em;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-left: 7px;
 }
 h1 {
   color: white;
@@ -105,11 +111,12 @@ h4 {
   text-align: center;
   margin-top: 20px;
   font-size: 1em;
-  color: lightsteelblue;
+  color: lightgrey;
 }
 .footer-form a {
   text-decoration: none;
   margin-bottom: 3px;
+  color: lightgrey;
 }
 .footer-form p {
   margin: 0;
@@ -142,5 +149,5 @@ h4 {
 }
 
 a:visited {
-  color: lightblue;
+  color: lightgrey;
 }

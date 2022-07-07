@@ -70,14 +70,11 @@ img {
 .navbar a:hover {
   font-weight: bold;
 }
-.navbar i {
-  font-size: 2em;
-  color: black;
-}
 
 p {
   font-size: 3em;
 }
+
 .title {
   display: flex;
   flex-direction: column;
@@ -394,19 +391,20 @@ p {
   justify-content: flex-end;
 }
 
-.hamburger a:visited {
+  .hamburger a:visited {
   color: lightgrey;
 }
 
 @media (min-width: 640px) {
-  .hamburguer {
+  .hamburger {
     display: none;
   }
+
   .navbar nav ul li {
     margin-right: 10px;
   }
   .navbar {
-    font-size: medium;
+    font-size: 1em;
     width: 50%;
     margin-right: 5px;
   }
@@ -415,9 +413,16 @@ p {
   .navbar {
     display: none;
   }
+  .hero-img {
+    height: 220px;
+  }
   .slogan {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 10px;
+  }
+  .text-container {
+    margin-top: 30px;
+    font-size: 0.9em;
   }
   .history-container, 
   .destinations-container {
@@ -426,8 +431,9 @@ p {
     width: 95%;
     margin:0;
   }
-  #about-me {
-    padding: 0;
+  #about-me,
+  #hero {
+    padding: 10px;
   }
   .destinations-title {
     width: 90%;
