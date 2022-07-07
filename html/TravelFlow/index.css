@@ -374,8 +374,8 @@ p {
   list-style: none;
   display: block;
   padding: 10px 0;
-  color: lightgrey;
   font-family: "indie_flowers";
+  color: lightgrey;
   font-size: 1em;
 }
 .toggle a {
