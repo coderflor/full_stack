@@ -439,6 +439,9 @@ p {
   #hero {
     padding: 10px;
   }
+  .history-title {
+    padding-right: 0;
+  }
   .destinations-title {
     width: 90%;
     padding: 0;
