@@ -3,12 +3,20 @@ body {
   margin: 0;
 }
 @font-face {
+  font-family: "noto";
+  src: url(./fonts/Noto_Sans_Display/noto.ttf);
+}
+@font-face {
   font-family: "indie_flowers";
   src: url(./fonts/indie_flowers/IndieFlower-Regular.ttf);
 }
 @font-face {
   font-family: "Frederika";
   src: url(./fonts/frederika_the_great/FrederickatheGreat-Regular.ttf);
+}
+@font-face {
+  font-family: "raleway";
+  src: url(./fonts/raleway/Raleway-Bold.ttf);
 }
 .bg-image {
   position: absolute;
@@ -52,7 +60,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 50%;
-  gap:20px;
+  gap: 20px;
 }
 
 .navbar ul {
@@ -70,10 +78,15 @@ img {
 .navbar a:hover {
   font-weight: bold;
 }
-
-p {
-  font-size: 3em;
+.login i {
+  font-size: 1.5em;
+  color:black;
+  opacity: 0.7;
 }
+
+/* p {
+  font-size: 3em;
+} */
 
 .title {
   display: flex;
@@ -205,14 +218,14 @@ p {
 }
 
 .about-me-text {
-  font-size: 0.6em;
+  font-size: 1.5em;
   font-family: "indie_flowers";
   text-align: center;
   font-weight: 900;
 }
 
 .about-me-text p {
-  padding: 5px;
+  padding: 20px;
   padding-top: 0;
 }
 
@@ -228,15 +241,15 @@ p {
 }
 
 .destinations-title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    width: 30%;
-    padding: 30px;
-    padding-top: 10px;
-    font-family: "Frederika";
-    font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  padding: 30px;
+  padding-top: 10px;
+  font-family: "Frederika";
+  font-size: 1.4em;
 }
 
 .destinations-title img {
@@ -329,17 +342,9 @@ p {
   background-image: url(./imagenes/prague.jpg);
 }
 .cards:nth-child(8) .cards-img {
-  background-image: url(./imagenes/colisseum.jpg);
+  background-image: url(./imagenes/budapest.jpg);
   background-position-y: 50%;
 }
-.cards:nth-child(9) .cards-img {
-  background-image: url(./imagenes/london.jpg);
-}
-.cards:nth-child(10) .cards-img {
-  background-image: url(./imagenes/barcelona.jpg);
-  background-position-y: 50%;
-}
-
 /* ----------------------- */
 
 .menu-button {
@@ -367,7 +372,7 @@ p {
   top: 100px;
   right: 10px;
   text-align: center;
-  background-color:black;
+  background-color: black;
   border-radius: 7px;
   padding: 20px;
   width: 150px;
@@ -395,8 +400,171 @@ p {
   justify-content: flex-end;
 }
 
-  .hamburger a:visited {
+.hamburger a:visited {
   color: lightgrey;
+}
+
+/* ------------------------------------------ */
+
+.contactus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  height: auto;
+  font-family: "indie_flowers";
+  font-weight: 600;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.contactus-container h2 {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.contactus-container p {
+  margin-right: 100px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.contact p {
+  font-size: 1em;
+}
+.address,
+.mail,
+.tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nets {
+  display: flex;
+  flex-direction: column;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.address p {
+  padding-left: 10px;
+}
+.mail p {
+  padding-left: 10px;
+}
+.tel p {
+  padding-left: 10px;
+}
+.nets p {
+  padding-left: 10px;
+}
+.nets a {
+  font-size: 2rem;
+}
+.social_media {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 50px;
+}
+.social_media i {
+  padding-right: 20px;
+}
+.social_media a:visited {
+  color: black;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 80%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  /*   border-width: 2px;
+  border-color: black;
+  border-style: solid; */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 76px;
+  margin: 0;
+  border-top-color: #e3e3e3;
+  border-width: 1px 0px 0px 0px;
+  border-top-style: solid;
+  z-index: 1000;
+  background-color: #e3e3e3;
+  opacity: 0.7;
+}
+.footer_logo {
+  margin-top: -19px;
+  font-size: 2em;
+}
+.footer_logo i {
+    opacity: 0.7;
+}
+/* .footer_logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin-top: -45px;
+}
+.footer_logo i {
+  color:grey;
+  width: auto;
+  height: 80%;
+  font-size: 2em;
+} */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  opacity: 0.7;
+  /* 
+  justify-content: space-around;
+  align-items: center;
+  font-family: "noto";
+  font-size: 1em;
+  color: grey; */
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  padding-inline-start: 0;
+}
+.footer-nav a {
+  font-family: "noto";
+  font-size: 1em;
+  color: grey;
+  color: black;
+  text-decoration: none;
 }
 
 @media (min-width: 640px) {
@@ -428,12 +596,12 @@ p {
     margin-top: 30px;
     font-size: 0.9em;
   }
-  .history-container, 
+  .history-container,
   .destinations-container {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin:0;
+    margin: 0;
   }
   #about-me,
   #hero {
