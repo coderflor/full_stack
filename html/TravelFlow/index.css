@@ -3,6 +3,14 @@ body {
   margin: 0;
 }
 @font-face {
+  font-family: "special-elite";
+  src: url(./fonts/Special_Elite/special-elite-regular.ttf);
+}
+@font-face {
+  font-family: "raleway-thin";
+  src: url(./fonts/raleway/Raleway-Thin.ttf);
+}
+@font-face {
   font-family: "noto";
   src: url(./fonts/Noto_Sans_Display/noto.ttf);
 }
@@ -16,7 +24,7 @@ body {
 }
 @font-face {
   font-family: "raleway";
-  src: url(./fonts/raleway/Raleway-Bold.ttf);
+  src: url(./fonts/raleway/raleway.ttf);
 }
 .bg-image {
   position: absolute;
@@ -38,14 +46,15 @@ body {
   margin: 0px;
   justify-content: space-between;
   background-color: lightgrey;
-  font-family: "indie_flowers";
-  font-size: 1.3em;
+  font-family: "raleway";
+  font-size: 1.2em;
+  font-weight: 600;
   border-width: 0px 0px 2px 0px;
   border-style: solid;
   border-color: black;
 }
 
-img {
+.logo img {
   width: 200px;
   height: auto;
 }
@@ -80,7 +89,7 @@ img {
 }
 .login i {
   font-size: 1.5em;
-  color:black;
+  color: black;
   opacity: 0.7;
 }
 
@@ -114,7 +123,9 @@ img {
 }
 
 #hero,
-#about-me {
+#about-me,
+#quote,
+#contact {
   justify-content: center;
   flex-wrap: wrap;
   padding: 40px;
@@ -149,9 +160,8 @@ img {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-  font-family: "indie_flowers";
-  font-style: bold;
-  font-size: 1.7em;
+  font-family: "special-elite";
+  font-size: 1.5em;
   width: 50%;
   height: auto;
   margin-right: -60px;
@@ -207,11 +217,11 @@ img {
   position: absolute;
   background-image: url(./imagenes/bagagge.jpg);
   background-position-x: center;
-  background-position-y: 80%;
+  background-position-y: 75%;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  opacity: 0.5;
+  opacity: 0.3;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -219,7 +229,7 @@ img {
 
 .about-me-text {
   font-size: 1.5em;
-  font-family: "indie_flowers";
+  font-family: "raleway";
   text-align: center;
   font-weight: 900;
 }
@@ -247,7 +257,7 @@ img {
   align-items: center;
   width: 30%;
   padding: 30px;
-  padding-top: 10px;
+  padding-top: 0;
   font-family: "Frederika";
   font-size: 1.4em;
 }
@@ -270,14 +280,26 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 70%;
-  gap: 60px;
-  padding-top: 10px;
-  font-family: "indie_flowers";
+  width: 60%;
+  gap: 40px;
+  padding-top: 45px;
+  font-family: "raleway";
+  font-weight: 900;
+}
+.cards a {
+  text-decoration: none;
+  color: black;
+}
+.cards a:visited{
+  color:black;
+}
+.cards-container a:hover {
+   transform: scale(1.01);
+  font-weight: bold;
 }
 
 .cards-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
@@ -322,28 +344,26 @@ img {
   background-image: url(./imagenes/beach.jpg);
 }
 .cards:nth-child(2) .cards-img {
-  background-image: url(./imagenes/eiffel.jpg);
+  background-image: url(./imagenes/bg-ciudades-europeas2.jpg);
 }
 .cards:nth-child(3) .cards-img {
-  background-image: url(./imagenes/colisseum.jpg);
+  background-image: url(./imagenes/times-square.jpg);
   background-position-y: 90%;
 }
 .cards:nth-child(4) .cards-img {
-  background-image: url(./imagenes/london.jpg);
+  background-image: url(./imagenes/portada-cuento.jpg);
 }
 .cards:nth-child(5) .cards-img {
-  background-image: url(./imagenes/barcelona.jpg);
-  background-position-y: 100%;
+  background-image: url(./imagenes/portada-children.jpg);
 }
 .cards:nth-child(6) .cards-img {
-  background-image: url(./imagenes/newyork.jpg);
+  background-image: url(./imagenes/portada-exoticos.jpg);
 }
 .cards:nth-child(7) .cards-img {
-  background-image: url(./imagenes/prague.jpg);
+  background-image: url(./imagenes/portada-argentina.jpg);
 }
 .cards:nth-child(8) .cards-img {
-  background-image: url(./imagenes/budapest.jpg);
-  background-position-y: 50%;
+  background-image: url(./imagenes/portada-curiosos.jpg);
 }
 /* ----------------------- */
 
@@ -381,7 +401,8 @@ img {
   list-style: none;
   display: block;
   padding: 10px 0;
-  font-family: "indie_flowers";
+  font-family: "raleway";
+  font-weight: 900;
   color: lightgrey;
   font-size: 1em;
 }
@@ -405,6 +426,115 @@ img {
 }
 
 /* ------------------------------------------ */
+#quote {
+  font-family: "raleway";
+  font-weight: 900;
+  font-size: 1em;
+  width: 80%;
+}
+
+.quote-container {
+  background-image: url(./imagenes/colisseum.jpg);
+  background-size: cover;
+  background-position-y: 55%;
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+  font-family: "raleway";
+  font-weight: 900;
+  color:black;
+  width: 100%;
+
+}
+
+.quote-title {
+  font-family: "Frederika";
+  font-size: 1.5em;
+}
+
+.quote-form form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 15px;
+}
+.quote-form {
+  background-color: rgb(255, 255, 255, 0.6);
+  width: 35%;
+  height: 450px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+#out-date {
+  margin-top: 15px;
+}
+
+.quote-form form input,
+select,
+date,
+textarea {
+  width: 180px;
+  height: 25px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  font-family: "raleway-thin";
+  font-weight: 900;
+}
+.text-area-form {
+  width: 300px;
+  height: 100px;
+  margin-top: 5px;
+}
+
+.quote-submit-button {
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  background-color: #5AB2DF;
+  font-family: "raleway";
+  font-weight: 900;
+  font-size: 1em;
+  color: white;
+  align-self: center;
+} 
+.quote-submit-button:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.quote-img {
+  display: flex;
+  background-position-y: 100%;
+}
+.quote-img img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover;
+  flex: 1 0;
+  z-index: -1;
+
+}
+
+/* ----------------------------------------- */
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-bottom: 200px;
+}
 
 .contactus-container {
   display: flex;
@@ -412,8 +542,8 @@ img {
   align-items: flex-start;
   width: 60%;
   height: auto;
-  font-family: "indie_flowers";
-  font-weight: 600;
+  font-family: "raleway";
+  font-weight: 900;
   color: black;
   font-size: 1.2em;
   text-align: center;
@@ -427,13 +557,6 @@ img {
   margin-right: 100px;
 }
 
-#contact {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  margin-bottom: 100px;
-}
 .contact_container {
   display: flex;
   flex-direction: column;
@@ -523,7 +646,7 @@ img {
   font-size: 2em;
 }
 .footer_logo i {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 /* .footer_logo {
   display: flex;
@@ -565,6 +688,26 @@ img {
   color: grey;
   color: black;
   text-decoration: none;
+}
+
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll
+
+  /* Vamos a añadir esto 👇 */
+  scroll-nap-type mandatory;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-align: center;
 }
 
 @media (min-width: 640px) {
