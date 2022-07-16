@@ -176,6 +176,26 @@ body {
   margin-right: 10px;
 }
 
+.up-arrow {
+  position: absolute;
+  top: 100vh;
+  bottom: 10px;
+  right: 10px;
+  pointer-events: none;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.up-arrow i {
+  position: fixed;
+  position: sticky;
+  pointer-events: all;
+  top: calc(100vh - 67px);
+  right: 10px;
+  font-size: 2em;
+}
+
 .hero-img {
   background-image: url(./imagenes/travel-planner.jpg);
   margin-right: 0;
@@ -276,6 +296,8 @@ body {
   top: 15px;
 }
 
+/* ------ cards ------ */
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -287,15 +309,15 @@ body {
   font-family: "raleway";
   font-weight: 900;
 }
-.cards{
+.cards {
   text-decoration: none;
   color: black;
 }
-.cards a:visited{
-  color:black;
+.cards a:visited {
+  color: black;
 }
 .cards:hover {
-   transform: scale(1.01);
+  transform: scale(1.01);
   font-weight: bold;
 }
 
@@ -435,20 +457,20 @@ body {
 }
 
 .quote-container {
-    background-image: url(./imagenes/colisseum.jpg);
-    background-size: cover;
-    background-position-y: 55%;
-    padding: 20px;
-    padding-top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 40px;
-    align-items: center;
-    font-family: "raleway";
-    font-weight: 900;
-    color: black;
-    width: 100%;
+  background-image: url(./imagenes/colisseum.jpg);
+  background-size: cover;
+  background-position-y: 55%;
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 40px;
+  align-items: center;
+  font-family: "raleway";
+  font-weight: 900;
+  color: black;
+  width: 100%;
 }
 
 .quote-title {
@@ -465,13 +487,11 @@ body {
 }
 .quote-form {
   background-color: rgb(255, 255, 255, 0.3);
-  width: 35%;
   height: 450px;
   border-radius: 20px;
   margin-top: 20px;
   padding-left: 10px;
 }
-
 
 #out-date {
   margin-top: 15px;
@@ -493,8 +513,8 @@ textarea {
   font-weight: 900;
 }
 .text-area-form {
-  width: 300px;
-  height: 100px;
+  width: 270px;
+  height: 70px;
   margin-top: 5px;
 }
 
@@ -502,13 +522,13 @@ textarea {
   border-radius: 5px;
   width: 150px;
   height: 30px;
-  background-color: #5AB2DF;
+  background-color: #5ab2df;
   font-family: "raleway";
   font-weight: 900;
   font-size: 1em;
   color: white;
   align-self: center;
-} 
+}
 .quote-submit-button:hover {
   transform: scale(1.1);
   font-weight: bold;
@@ -525,7 +545,6 @@ textarea {
   background-size: cover;
   flex: 1 0;
   z-index: -1;
-
 }
 
 /* ----------------------------------------- */
@@ -568,7 +587,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-content: center;
-  text-align:start;
+  text-align: start;
 }
 
 .contact p {
@@ -621,7 +640,6 @@ textarea {
   color: white;
 }
 
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -673,15 +691,11 @@ textarea {
   color: grey;
 }
 
-
 .slider-container {
   display: flex;
   width: 100%;
   height: 100vh;
-  overflow-x: scroll
-
-  /* Vamos a añadir esto 👇 */
-  scroll-nap-type mandatory;
+  overflow-x: scroll /* Vamos a añadir esto 👇 */ scroll-nap-type mandatory;
 }
 
 .slider-container img {
@@ -730,7 +744,8 @@ textarea {
     margin: 0;
   }
   #about-me,
-  #hero {
+  #hero,
+  #contact {
     padding: 10px;
   }
   .history-title {
@@ -746,11 +761,21 @@ textarea {
   .destinations-title img {
     display: none;
   }
-
-.quote-container {
-  justify-content: flex-start;
-}
-.quote-form {
-  width: 100%;
-}
+  .quote-container {
+    justify-content: center;
+    padding: 5px;
+  }
+  .quote-form form{
+    width: 90%;
+  }
+  .contactus-container {
+    width: 90%;
+    font-size: 1em;
+    margin: 40px;
+  }
+  .footer-nav {
+    width: 90%;
+  }
+  .footer-nav ul {
+  justify-content: space-between;
 }
