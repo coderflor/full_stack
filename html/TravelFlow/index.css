@@ -513,7 +513,7 @@ textarea {
   font-weight: 900;
 }
 .text-area-form {
-  width: 270px;
+  width: 250px;
   height: 70px;
   margin-top: 5px;
 }
@@ -745,7 +745,8 @@ textarea {
   }
   #about-me,
   #hero,
-  #contact {
+  #contact,
+  #quote {
     padding: 10px;
   }
   .history-title {
@@ -761,11 +762,15 @@ textarea {
   .destinations-title img {
     display: none;
   }
+  .cards-container {
+    padding-top: 0;
+  }
   .quote-container {
     justify-content: center;
     padding: 5px;
   }
   .quote-form form{
+    gap: 8px;
     width: 90%;
   }
   .contactus-container {
