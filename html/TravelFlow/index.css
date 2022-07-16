@@ -1,6 +1,7 @@
 body {
   position: relative;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -475,7 +476,7 @@ body {
 
 .quote-title {
   font-family: "Frederika";
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .quote-form form {
