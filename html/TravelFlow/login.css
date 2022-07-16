@@ -15,6 +15,11 @@ body {
   font-family: "indie_flowers";
   src: url(./fonts/indie_flowers/IndieFlower-Regular.ttf);
 }
+@font-face {
+  font-family: "raleway";
+  src: url(./fonts/raleway/raleway.ttf);
+}
+
 .login {
   display: flex;
   justify-content: center;
@@ -39,7 +44,7 @@ body {
   color: #ffffff;
   opacity: 1; /* Firefox */
   font-size: 1em;
-  font-family: "indie_flowers";
+  font-family: "raleway";
 }
 .form-login {
   display: flex;
@@ -56,7 +61,7 @@ body {
   border-width: 5px;
   color: white;
   box-shadow: 0 1px 0 #cfcfcf;
-  font-family: "indie_flowers";
+  font-family: "raleway";
 }
 .form-control {
   background:transparent;
@@ -68,15 +73,14 @@ body {
 }
 h1 {
   color: white;
-  font-size: 2.5em;
+  font-size: 1.8em;
+  text-align: center;
 }
 h4 {
   border: 0 solid #fff;
   border-bottom-width: 1px;
   padding-bottom: 10px;
   text-align: center;
-  font-size: 1.5em;
-  font-style: italic;
   margin-top: 10px;
 }
 
@@ -92,7 +96,7 @@ h4 {
 }
 .group-btn button {
   background-color: white;
-  font-family: "indie_flowers";
+  font-family: "raleway";
   border-radius: 15px;
   font-size: 1em;
   color: #1b262c;
@@ -131,7 +135,7 @@ h4 {
 }
 .go-back a {
   text-decoration: none;
-  font-family: "indie_flowers";
+  font-family: "raleway";
   text-align: center;
   font-size: 1.5em;
   color: white;

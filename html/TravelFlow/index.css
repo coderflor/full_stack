@@ -2,6 +2,7 @@ body {
   position: relative;
   margin: 0;
 }
+
 @font-face {
   font-family: "special-elite";
   src: url(./fonts/Special_Elite/special-elite-regular.ttf);
@@ -10,6 +11,11 @@ body {
   font-family: "raleway-thin";
   src: url(./fonts/raleway/Raleway-Thin.ttf);
 }
+@font-face {
+  font-family: "raleway";
+  src: url(./fonts/raleway/raleway.ttf);
+}
+
 @font-face {
   font-family: "noto";
   src: url(./fonts/Noto_Sans_Display/noto.ttf);
@@ -22,10 +28,7 @@ body {
   font-family: "Frederika";
   src: url(./fonts/frederika_the_great/FrederickatheGreat-Regular.ttf);
 }
-@font-face {
-  font-family: "raleway";
-  src: url(./fonts/raleway/raleway.ttf);
-}
+
 .bg-image {
   position: absolute;
   background-image: url("./imagenes/bg-image.webp");
@@ -161,7 +164,7 @@ body {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
   font-family: "special-elite";
-  font-size: 1.5em;
+  font-size: 1.3em;
   width: 50%;
   height: auto;
   margin-right: -60px;
@@ -189,6 +192,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
+  padding-top: 100px;
 }
 
 .history-container {
@@ -209,7 +213,7 @@ body {
   font-family: "Frederika";
   flex: 0 1 25%;
   text-align: end;
-  font-size: 1.4em;
+  font-size: 1.3em;
   padding-right: 50px;
 }
 
@@ -259,7 +263,7 @@ body {
   padding: 30px;
   padding-top: 0;
   font-family: "Frederika";
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .destinations-title img {
@@ -267,9 +271,6 @@ body {
   height: auto;
   border-bottom: 10px;
   border-radius: 10px;
-  /* position: fixed;
-  bottom: 0;
-  left: 0; */
   float: left;
   position: sticky;
   top: 15px;
@@ -286,14 +287,14 @@ body {
   font-family: "raleway";
   font-weight: 900;
 }
-.cards a {
+.cards{
   text-decoration: none;
   color: black;
 }
 .cards a:visited{
   color:black;
 }
-.cards-container a:hover {
+.cards:hover {
    transform: scale(1.01);
   font-weight: bold;
 }
@@ -434,26 +435,25 @@ body {
 }
 
 .quote-container {
-  background-image: url(./imagenes/colisseum.jpg);
-  background-size: cover;
-  background-position-y: 55%;
-  padding: 20px;
-  padding-top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 40px;
-  align-items: center;
-  font-family: "raleway";
-  font-weight: 900;
-  color:black;
-  width: 100%;
-
+    background-image: url(./imagenes/colisseum.jpg);
+    background-size: cover;
+    background-position-y: 55%;
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+    align-items: center;
+    font-family: "raleway";
+    font-weight: 900;
+    color: black;
+    width: 100%;
 }
 
 .quote-title {
   font-family: "Frederika";
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .quote-form form {
@@ -464,13 +464,15 @@ body {
   gap: 15px;
 }
 .quote-form {
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.3);
   width: 35%;
   height: 450px;
   border-radius: 20px;
   margin-top: 20px;
   padding-left: 10px;
 }
+
+
 #out-date {
   margin-top: 15px;
 }
@@ -532,26 +534,31 @@ textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  padding-bottom: 200px;
+  padding-bottom: 60px;
+  width: 100%;
 }
 
 .contactus-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  background-image: url(./imagenes/bg-contactus.jpg);
+  background-size: cover;
+  padding: 20px;
+  padding-top: 0;
   width: 60%;
-  height: auto;
   font-family: "raleway";
   font-weight: 900;
-  color: black;
-  font-size: 1.2em;
-  text-align: center;
+  color: white;
+  font-size: 1.1em;
 }
 
 .contactus-container h2 {
+  font-family: "raleway-thin";
+  font-size: 1.8em;
   text-decoration: underline;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .contactus-container p {
   margin-right: 100px;
@@ -561,6 +568,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-content: center;
+  text-align:start;
 }
 
 .contact p {
@@ -604,27 +612,15 @@ textarea {
   padding-left: 50px;
 }
 .social_media i {
-  padding-right: 20px;
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
 }
 .social_media a:visited {
-  color: black;
-}
-.map {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: white;
 }
 
-.map iframe {
-  width: 100%;
-  height: 80%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  border-radius: 10px;
-  /*   border-width: 2px;
-  border-color: black;
-  border-style: solid; */
-}
 
 .footer-container {
   display: flex;
@@ -632,7 +628,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 76px;
+  height: 140px;
   margin: 0;
   border-top-color: #e3e3e3;
   border-width: 1px 0px 0px 0px;
@@ -648,30 +644,12 @@ textarea {
 .footer_logo i {
   opacity: 0.7;
 }
-/* .footer_logo {
-  display: flex;
-  align-items: center;
-  width: auto;
-  height: 100%;
-  margin-top: -45px;
-}
-.footer_logo i {
-  color:grey;
-  width: auto;
-  height: 80%;
-  font-size: 2em;
-} */
+
 .footer-nav {
   display: flex;
   flex-direction: column;
   width: 60%;
   opacity: 0.7;
-  /* 
-  justify-content: space-around;
-  align-items: center;
-  font-family: "noto";
-  font-size: 1em;
-  color: grey; */
 }
 
 .footer-nav ul {
@@ -688,6 +666,11 @@ textarea {
   color: grey;
   color: black;
   text-decoration: none;
+}
+.author {
+  font-family: "noto";
+  font-size: 0.7em;
+  color: grey;
 }
 
 
@@ -757,7 +740,17 @@ textarea {
     width: 90%;
     padding: 0;
   }
+  .destinations-title h2 {
+    margin: 5px;
+  }
   .destinations-title img {
     display: none;
   }
+
+.quote-container {
+  justify-content: flex-start;
+}
+.quote-form {
+  width: 100%;
+}
 }
