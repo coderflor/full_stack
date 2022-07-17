@@ -108,7 +108,7 @@ li {
   display: inline-block;
   color: white;
   text-decoration: none;
-  background-color: grey;
+  background-color: #3e4145;
   opacity: 0.6;
   padding: 10px;
   width: 1px;
@@ -118,7 +118,7 @@ li {
 }
 
 #destinations-slider > .menu li a:hover {
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 .go-back {
@@ -131,7 +131,7 @@ li {
   text-decoration: none;
   font-family: "noto";
   font-size: 1.5em;
-  color: #3e4145;
+  color: #3e3e3e;
   font-weight: bold;
 }
 
