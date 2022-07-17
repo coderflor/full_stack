@@ -187,7 +187,7 @@ body {
   position: absolute;
   top: 100vh;
   bottom: 10px;
-  right: 10px;
+  right: 3px;
   pointer-events: none;
   text-decoration: none;
   color: #000000;
@@ -569,6 +569,49 @@ textarea {
   z-index: -1;
 }
 
+/* -----------offers----------- */
+
+.offers-container {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0px 35px 0px;
+}
+
+.offers-container h2 {
+  font-family: "raleway";
+  font-size: 2em; 
+}
+.offers-container i {
+  font-size: 2.5em;
+}
+.icon-email-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-email-input input {
+  border-radius: 5px;
+  width: 250px;
+  height: 25px;
+  font-family: "raleway";
+  padding-left: 5px;
+  font-style: italic;
+}
+.offers-container button {
+  margin-top: 10px;
+  width: 250px;
+  height: 35px;
+  border-radius: 20px;
+  font-family: "raleway";
+  font-size: 1em;
+  font-weight: bold;
+}
+.offers-container button:hover {
+  background-color: black;
+  color: white;
+}
+
+
 /* -----------------contact------------------- */
 
 #contact {
@@ -808,5 +851,14 @@ textarea {
   }
   .footer-nav ul {
   justify-content: space-between;
+}
+.offers-container {
+  padding: 15px;
+}
+.offers-container h2 {
+  font-size: 1.8em;
+}
+.offers-container button {
+  align-self: center;
 }
 }
